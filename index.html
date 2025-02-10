@@ -162,7 +162,7 @@
         function summarizeText() {
             let text = finalTranscript;
             let words = text.split(" ");
-            let summary = words.slice(0, Math.min(50, words.length)).join(" ") + (words.length > 50 ? "..." : "");
+            let summary = words.slice(0, Math.min(10000, words.length)).join(" ") + (words.length > 10000 ? "..." : "");
             document.getElementById('summary').innerText = summary;
         }
 
